@@ -13,6 +13,7 @@ export default Input;
 
 const StyledInput = styled.input`
   width: 100%;
+  border-radius: 5px;
   background-color: white;
 ::placeholder {
   color: black,

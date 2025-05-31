@@ -7,7 +7,7 @@ import Page from '../../components/Page';
 import Input from '../../components/Form/Input';
 import Button from '../../components/Form/Button';
 import Link from '../../components/Link';
-import { Container, Row, Title, Label } from '../../components/Auth';
+import { Container, Row, Title, Label, MainRow } from '../../components/Auth';
 import UserContext from '../../contexts/UserContext';
 import useSignIn from '../../hooks/api/useSignIn';
 import Footer from '../../components/Footer';
@@ -44,10 +44,10 @@ export default function SignIn() {
     <Page >
       <Container>
         <Row>
-          <img src={logo} alt="Ride Connect Logo" width="140px" />
+          <img src={logo} alt="Ride Connect Logo" width="140px" style={{ borderRadius: "10%" }} />
           <Title>Ride Connect</Title>
         </Row>
-        <Row>
+        <MainRow>
           <form onSubmit={submit}>
             <Label>Email</Label>
             <Input label="Enter your email" type="text" fullWidth value={email} onChange={e => setEmail(e.target.value)} />
@@ -55,7 +55,7 @@ export default function SignIn() {
             <Input label="Enter your password" type="password" fullWidth value={password} onChange={e => setPassword(e.target.value)} />
             <Button type="submit" color="primary" fullWidth disabled={loadingSignIn}>LOGIN</Button>
           </form>
-        </Row>
+        </MainRow>
         <Row>
           <Link to="/Sign-up">Create a account here!</Link>
         </Row>
