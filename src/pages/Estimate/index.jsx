@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-import Page from '../../components/Page';
-import { Container, Main, Content } from '../../components/styles.js';
-import Input from '../../components/Form/Input';
-import Button from '../../components/Form/Button';
-import Header from '../../components/Home/Header.js';
-import Footer from '../../components/Footer.js';
+import Page from '../../components/Page.jsx';
+import { Container, Main, Content } from '../../components/styles';
+import Input from '../../components/Form/Input.jsx';
+import Button from '../../components/Form/Button.jsx';
+import Header from '../../components/Home/Header.jsx';
+import Footer from '../../components/Footer.jsx';
 
-import useEstimateApi from '../../hooks/api/useEstimate.js';  
+import useEstimateApi from '../../hooks/api/useEstimate';  
 
 export default function EstimateRide() {
   const [ origin, setOrigin ] = useState('');
