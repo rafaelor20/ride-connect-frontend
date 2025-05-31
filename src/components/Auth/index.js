@@ -9,14 +9,14 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 32px;
+  font-size: 24px;
   margin-top: 10px;
   color: white;
 `;
 
 export const Label = styled.h1`
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 1px;
   color: white;
 `;
 
@@ -25,5 +25,4 @@ export const Row = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
 `;
