@@ -15,6 +15,8 @@ const StyledInput = styled.input`
   width: 100%;
   border-radius: 5px;
   background-color: white;
-::placeholder {
-  color: black,
-}`;
+  color: black;
+  ::placeholder {
+    color: black;
+  }
+`;
