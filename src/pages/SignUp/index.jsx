@@ -8,7 +8,6 @@ import Button from '../../components/Form/Button';
 import { Container, Row, Title, Label, MainRow } from '../../components/Auth';
 import Link from '../../components/Link';
 import Footer from '../../components/Footer';
-
 import useSignUp from '../../hooks/api/useSignUp';
 
 import logo from '../../assets/logo.png';
@@ -49,7 +48,6 @@ export default function SignUp() {
           <Title>Ride Connect</Title>
         </Row>
         <MainRow>
-          <Label></Label>
           <form onSubmit={submit}>
             <Input
               label="Username"

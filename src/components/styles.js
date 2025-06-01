@@ -8,7 +8,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: #8C11BE;
   font-family: Arial, sans-serif;
 `;
 

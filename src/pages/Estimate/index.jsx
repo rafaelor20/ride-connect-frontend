@@ -40,9 +40,9 @@ export default function EstimateRide() {
 
   return (
     <Page>
-      <Container>
-        <Header/>
+      <Container>        
         <Main>
+          <Header/>
           <Content>
             <form onSubmit={submit}>
               <Input
