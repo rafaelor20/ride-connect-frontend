@@ -26,7 +26,7 @@ export const Content = styled.div`
   background-color: #fff;
   text-align: center;
   padding: 5px 0px;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 42vh;
   width: 70vw;

@@ -8,8 +8,9 @@ export default function Home() {
   return (
     <Page>
       <Container>
-        <Header/>
+        
         <Main>
+          <Header/>
           <Content>
             <ToNextPage nextPage="/estimate" description="Get a new ride!" />
             <ToNextPage nextPage="/rides" description="Get historic of rides" />
