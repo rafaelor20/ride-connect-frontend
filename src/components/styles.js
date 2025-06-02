@@ -48,3 +48,9 @@ export const ButtonsDiv = styled.div`
   gap: 10px 0px;
   max-width: calc(100px * 4);
 `;
+
+export const Label = styled.h1`
+  font-size: 12px;
+  margin-bottom: 1px;
+  color: grey;
+`;

@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import Page from '../../components/Page.jsx';
 import { Container, Main, Content } from '../../components/styles';
+import FormDescription from '../../components/Estimate/FormDescription.jsx';
 import Input from '../../components/Form/Input.jsx';
 import Button from '../../components/Form/Button.jsx';
 import Header from '../../components/Home/Header.jsx';
@@ -45,6 +46,7 @@ export default function EstimateRide() {
           <Header/>
           <Content>
             <form onSubmit={submit}>
+              <FormDescription text="Where to pick you up:" />
               <Input
                 label="Origin"
                 type="text"
@@ -52,6 +54,7 @@ export default function EstimateRide() {
                 value={origin}
                 onChange={(e) => setOrigin(e.target.value)}
               />
+              <FormDescription text="Where are you going:" />
               <Input
                 label="Destination"
                 type="text"
@@ -60,7 +63,7 @@ export default function EstimateRide() {
                 onChange={(e) => setDestination(e.target.value)}
               />
               <Button type="submit" color="primary" fullWidth disabled={estimateLoading}>
-              Estimate
+              Estimate your ride
               </Button>
             </form>
           </Content>
